@@ -3,17 +3,26 @@
         {
             "id" : 1,
             "name" : "2 nights in Chaung Tha",
-            "price" : 100000
+            "price" : 100000,
+            "location" : "Myanmar"
         },
         {
             "id" : 2,
             "name" : "1 nights in Kalaw",
-            "price" : 120000
+            "price" : 120000,
+            "location" : "Myanmar"
         },
         {
             "id" : 3,
             "name" : "3 nights in Ngapali",
-            "price" : 300000
+            "price" : 300000,
+            "location" : "Myanmar"
+        },
+        {
+            "id" : 4,
+            "name" : "3 nights in Bangkok",
+            "price" : 800000,
+            "location" : "Thailand"
         }
     ]
 }
