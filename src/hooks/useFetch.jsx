@@ -2,15 +2,18 @@
 // fetch -> dynamic -> url
 // outpur -> api's data
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
-let useFetch = (url) => {
+let useFetch = (url, _options) => {
 
     let [data, setData] = useState(null);
     let [loading, setLoading] = useState(false);
     let [error, setError] = useState(null);
+    let options = useRef(_options);
 
     useEffect(() => {
+
+        console.log(options);
 
         let abortController = new AbortController();
         let signal = abortController.signal;
@@ -39,7 +42,7 @@ let useFetch = (url) => {
             return () => {
                 abortController.abort();
             }
-    }, [url]);
+    }, [url, options]);
     return {data, loading ,error};
 }
 

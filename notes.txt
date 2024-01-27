@@ -1,0 +1,19 @@
+primitive (do not cause infinite loop)
+
+- string
+- number 
+- boolean 
+- null 
+- underfined 
+
+
+reference (cause infinite loop)
+
+- object 
+- array 
+- function 
+
+
+function => useCallback()
+objects => useState() but setFun is useless
+        => useRef() (nice)
